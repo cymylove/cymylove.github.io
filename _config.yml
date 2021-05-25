@@ -1,1 +1,7 @@
 theme: jekyll-theme-minimal
+
+title: 奋斗的小盗
+email: kexinwb@gmail.com
+description: paul's blog,powered by jekyll.
+url: https://cymylove.github.io # the base hostname & protocol for your site
+keywords: ["Programming", "Java", "IaaS","Blog"]

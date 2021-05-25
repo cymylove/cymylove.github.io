@@ -51,7 +51,10 @@
                 </div>
                 <canvas id="canvas" width="1100" height="680"></canvas>
             </div>
-            <audio src="love.mp3" autoplay="autoplay"></audio>
+			<audio id="music" controls="controls" loop="loop" autoplay="autoplay" >
+              <source src="http://nq01.sycdn.kuwo.cn/128a364268435866438a26bf6fddd31f/60ad20bd/resource/n1/78/62/1226988350.mp3" type="" />
+                Your browser does not support the audio element.
+            </audio>
         </div>
     
     <script>
@@ -123,6 +126,7 @@
                 canvas.unbind("mousemove");
                 canvas.removeClass('hand');
             }
+			document.getElementById("music").play();
         }).mousemove(function(e){
             var offset = canvas.offset(), x, y;
             x = e.pageX - offset.left;
